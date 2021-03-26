@@ -28,7 +28,8 @@ public class Test {
 	
 
 	@Given("user is  on homepage")
-	public void user_is_on_homepage() throws Throwable {     
+	public void user_is_on_homepage() throws Throwable {
+		//Pease update the location of chrome driver as per your location
     	System.setProperty("webdriver.chrome.driver","C:\\Users\\k.pj\\Desktop\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -44,7 +45,7 @@ public class Test {
 	@When("new user clicks on create account")
 	public void new_user_clicks_on_create_account() throws Throwable{
 		authPage=new AuthenticationPage(driver);
-		authPage.createNewAccount("3453@rfavol.com");
+		authPage.createNewAccount("3453@rfavdfdol.com");
 	}
 
 	@When("a new user registers")
